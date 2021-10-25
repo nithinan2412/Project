@@ -1,49 +1,35 @@
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
 
-import React, { Component } from 'react'
-import LoginScreen from './src/pages/LoginScreen'
-import RegScreen from './src/pages/RegScreen'
-import HomeScreen from './src/pages/HomeScreen'
-import calendarScreen from './src/pages/calendarScreen'
-import ProfileScreen from './src/pages/ProfileScreen'
-import { NavigationContainer } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  View,
+  StatusBar 
+} from 'react-native';
 
 
+import Routes from './src/Routes';
 
-
-const Stack = createStackNavigator()
-
-function App() {
-
-  return (
-
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="LoginScreen"
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="RegScreen"
-          component={RegScreen}
-        />
-        <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
-          options={{ headerShown: false }}
-        />
-        <Stack.Screen
-          name="calendarScreen"
-          component={calendarScreen}
-        />
-        <Stack.Screen
-          name="ProfileScreen"
-          component={ProfileScreen}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
-  )
+export default class App extends Component<{}> {
+  render() {
+    return (
+      <View style={styles.container}>
+        <StatusBar
+           backgroundColor="#1c313a"
+           barStyle="light-content"
+         />
+        <Routes/>
+      </View>
+    );
+  }
 }
 
-export default App
+const styles = StyleSheet.create({
+  container : {
+    flex: 1,
+  }
+});
