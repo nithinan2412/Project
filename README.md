@@ -4,11 +4,10 @@
 
 ![image](https://user-images.githubusercontent.com/48476693/143358857-c04892e4-ad1f-4a15-8aa7-8bf2cd2db4a0.png)
 
-![image](https://user-images.githubusercontent.com/48476693/143359209-608f095d-bbbe-4cb3-b073-2d288d5dda09.png)
-
-
-
-รูปแบบตารางข้อมูลในคลาวน์
+![image](https://user-images.githubusercontent.com/48476693/143359209-608f095d-bbbe-4cb3-b073-2d288d5dda09.png)  
+    
+    
+รูปแบบตารางข้อมูลในคลาวน์  
 
 ![image](https://user-images.githubusercontent.com/48476693/143359445-f8bfbd3d-f91b-4387-809f-26d0d513902a.png)
 
